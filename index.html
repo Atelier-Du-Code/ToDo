@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>La todo Jounalière</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Integration des feuilles css-->
     <link rel="stylesheet" type="text/css" href="style.css">
+
+     <!--Integration du css materialise-->
+     <link rel="stylesheet" href="css/materialize.min.css">
+    
+    <title>La todo Jounalière</title> 
     
 </head>
-<body>
+<body class="background" >
     
-    <form>
-        
-        <label for="input_text">Une entrée de texte :</label>
-        <input type="text" id="input_text" name="input_text">
-    
-        <label for="choix_option">Sélectionnez une option :</label>
-        <select id="choix_option" name="choix_option">
-            <option value="note">note</option>
-            <option value="email">email</option>
-            <option value="todo">todo</option>
-        </select>
-        
+     <!--Integration du js materialise-->
+    <script src="js/materialize.min.js"></script>
+
+    <div class="conteneur_flex_body">
+
+        <div class="conteneur_titre">
+            <h1>To Do journalière</h1>
+        </div>
+
+        <div class="conteneur_flex_creation_liste">
+
+            <div class="conteneur_creation_gauche_droite">
+                <div class="conteneur_creation_entree_gauche">
+                    <form>
+                    
+                        <label for="input_text">Une entrée de texte :</label>
+                        <br>
+                        <input type="text" id="input_text" name="input_text">
+                    </form>
+                </div>
+                <div class="conteneur_creation_option_droite">
+                    <form>
+                    
+                       
+                        <label for="choix_option">Sélectionnez une option :</label>
+                        <select id="choix_option" name="choix_option">
+                            <option value="note">note</option>
+                            <option value="email">email</option>
+                            <option value="todo">todo</option>
+                        </select>
+                       
+                </div>
+            </div>   
+            
+            <div class="conteneur_creation_soumission">
+                <form>
+                    <input class="btn waves-effect waves-light" id="btnValide" type="submit" value="Soumettre">
+                </form>
+            </div>
+        </div>
         <br>
-        
-        <input id="btnValide" type="submit" value="Soumettre">
-    </form>
-    <ul id="listeAPuces">
-        <li>sbfjeh</li>
-    </ul>
 
-    <form>
-        <label for="option_recherche">Sélectionnez un choix de recherche :</label>
-        <select id="option_recherche" name="option_recherche">
-            <option value="note">note</option>
-            <option value="email">email</option>
-            <option value="todo">todo</option>
-        </select>
-
-        <button id="btnRecherche">Rechercher</button>
-        <button id="btnRefresh">Réinitialiser</button>
-
-
-    </form>
+        <div class="conteneur_liste_droit">           
+            <ul id="listeAPuces">
+                <li>Listes des tâches, email ou notes </li>
+            </ul>
+        </div>
+        <br>
+    </div>
 
     <script src="script.js"></script>
 </body>

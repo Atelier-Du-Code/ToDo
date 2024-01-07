@@ -1,16 +1,99 @@
+.background{
+
+    background-image: url('images/fond1.jpg');
+    background-size: cover; 
+    background-position: center;   
+  }
+
+.conteneur_flex_body{
+        
+    display: flex;
+    flex-direction: column;      
+    justify-content: space-between;
+
+    align-items: center;
+    height: 50vh;
+
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.conteneur_titre{
+    background-color: (255, 255, 255, 0);
+   
+}
+
+.conteneur_flex_creation_liste{
+
+    display: flex;
+    flex-direction: row;      
+    justify-content: space-between;
+
+    align-items: center;
+    width: 80%;
+
+   
+
+    gap: 10%;
+
+    background-color: (255, 255, 255, 0);
+
+}
+
+
+.conteneur_creation_entree_gauche{
+
+   
+    background-color: (255, 255, 255, 0);
+   
+}
+
+.conteneur_creation_gauche_droite{
+  
+    display: flex;
+    flex-direction: row; 
+    gap: 10%;
+    background-color: (255, 255, 255, 0);
+}
+
+.conteneur_creation_option_droite{
+    
+    background-color: (255, 255, 255, 0);
+   
+}
+.conteneur_creation_soumission{
+    margin-right: 12px;
+    background-color: (255, 255, 255, 0);
+}
+
+.conteneur_liste_droit{
+    
+    width: 80%;
+    
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+      
+}
+
+
+
+
 .note{
    
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
+    background-color: rgb(145, 219, 253);
 }
 
 .email{    
     
-    border: 2px solid green;
+     /*border: 2px solid green;*/
+
+    background-color: rgb(132, 218, 199);
 }
 
 .todo{
     
-    border: 2px solid red;
+     /*border: 2px solid red;*/
+     background-color: rgb(248, 206, 190);
 }
 
 
