@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>La todo Jounalière</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    
+    <form>
+        
+        <label for="input_text">Une entrée de texte :</label>
+        <input type="text" id="input_text" name="input_text">
+    
+        <label for="choix_option">Sélectionnez une option :</label>
+        <select id="choix_option" name="choix_option">
+            <option value="note">note</option>
+            <option value="email">email</option>
+            <option value="todo">todo</option>
+        </select>
+        
+        <br>
+        
+        <input id="btnValide" type="submit" value="Soumettre">
+    </form>
+    <ul id="listeAPuces">
+        <li>sbfjeh</li>
+    </ul>
+
+    <form>
+        <label for="option_recherche">Sélectionnez un choix de recherche :</label>
+        <select id="option_recherche" name="option_recherche">
+            <option value="note">note</option>
+            <option value="email">email</option>
+            <option value="todo">todo</option>
+        </select>
+
+        <button id="btnRecherche">Rechercher</button>
+        <button id="btnRefresh">Réinitialiser</button>
+
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
