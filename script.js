@@ -91,4 +91,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.FormSelect.init(elems);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var maListe = document.getElementById('listeAPuces');
+
+    maListe.addEventListener('click', function (event) {
+        // Vérifiez si l'élément cliqué est un <li>
+        if (event.target.tagName === 'LI') {
+            // Récupérez l'élément <li> cliqué
+            var elementClique = event.target;
+
+            // Faites quelque chose avec l'élément cliqué, par exemple, affichez son texte
+            console.log("Élément cliqué : " + elementClique.textContent);
+            elementClique.remove();
+        }
+    });
+});
+
 
