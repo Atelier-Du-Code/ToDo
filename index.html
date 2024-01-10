@@ -26,7 +26,8 @@
 
         <div class="conteneur_flex_creation_liste">
 
-            <div class="conteneur_creation_gauche_droite">
+            <div class="conteneur_flex_creation_gauche_droite_soumission">
+                
                 <div class="conteneur_creation_entree_gauche">
                     <form>
                     
@@ -38,7 +39,6 @@
                 <div class="conteneur_creation_option_droite">
                     <form>
                     
-                       
                         <label for="choix_option">Sélectionnez une option :</label>
                         <select id="choix_option" name="choix_option">
                             <option value="note">note</option>
@@ -47,13 +47,14 @@
                         </select>
                        
                 </div>
+                <div class="conteneur_creation_soumission">
+                    <form>
+                        <input class="btnSoumettre" id="btnValide" type="submit" value="Soumettre">
+                    </form>
+                </div>
             </div>   
             
-            <div class="conteneur_creation_soumission">
-                <form>
-                    <input class="btn waves-effect waves-light" id="btnValide" type="submit" value="Soumettre">
-                </form>
-            </div>
+            
         </div>
         <br>
 
@@ -63,6 +64,36 @@
             </ul>
         </div>
         <br>
+
+        <div class="conteneur_flex_recherche">
+
+            <div class="conteneur_selecteur">
+                <form>
+                    <label for="option_recherche">Sélectionnez un choix de recherche :</label>
+                    <br>                    
+                    <select id="option_recherche" name="option_recherche">
+                        <option value="note">note</option>
+                        <option value="email">email</option>
+                        <option value="todo">todo</option>
+                    </select>
+            
+                   
+                </form> 
+            </div>
+
+
+            <div class="conteneur_btnRecherche">
+
+                <button class="btnRecherche" id="btnRecherche">Rechercher</button>
+                
+            </div>
+            
+            <div>
+                <button class="btnReinitialise" id="btnRefresh">Réinitialiser</button>
+            </div>
+
+            
+        </div>
     </div>
 
     <script src="script.js"></script>

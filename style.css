@@ -29,11 +29,7 @@
     justify-content: space-between;
 
     align-items: center;
-    width: 80%;
-
    
-
-    gap: 10%;
 
     background-color: (255, 255, 255, 0);
 
@@ -47,7 +43,7 @@
    
 }
 
-.conteneur_creation_gauche_droite{
+.conteneur_flex_creation_gauche_droite{
   
     display: flex;
     flex-direction: row; 
@@ -72,6 +68,291 @@
     text-align: center;
     background-color: rgb(255, 255, 255);
       
+}
+
+.conteneur_flex_recherche{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    text-align: center;
+
+    width: 80%;
+    border: 1px solid;
+    padding: 3%;
+
+    background-color: rgb(255, 255, 255, 0);
+
+}
+.btnRecherche{
+
+   margin-top: 15px;
+
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 193, 122);
+    
+}
+
+.btnSoumettre{
+
+    width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 193, 122);
+
+}
+
+.btnReinitialise{
+
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.411);
+
+}
+
+@media only screen and (max-width: 770px) {
+
+    body {
+        
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed;
+
+        overflow-x: hidden; /* Empêche le défilement horizontal si la fenêtre est redimensionnée en dessous de la taille spécifiée */
+        /*min-width: 565px;*/
+    }
+    .conteneur_flex_body{
+        
+        /*height: 50vh;*/
+    
+        background-color: rgba(219, 17, 17, 0);
+    }
+    
+    .conteneur_titre{
+
+        width: 60%;
+        text-align: center;
+        background-color: (255, 255, 255, 0);
+       
+    }
+    
+    .conteneur_flex_creation_liste{
+    
+        width: 80%;
+        align-items: center;
+        text-align: center;
+       
+        gap: 8%;
+
+}
+    
+    
+    .conteneur_creation_entree_gauche{
+    
+       
+        background-color: rgb(255, 255, 25,0);
+       
+    }
+    
+    .conteneur_flex_creation_gauche_droite_soumission{
+        
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        text-align: center;
+        gap: 8%;
+        background-color: rgb(70, 177, 180, 0);
+    }
+    
+    .conteneur_creation_option_droite{
+        
+        background-color: rgb(255, 255, 255, 0);
+       
+    }
+    .conteneur_creation_soumission{
+        /*margin-right: 12px;*/
+        background-color: (255, 255, 255, 0);
+    }
+    
+    .conteneur_liste_droit{
+        
+        width: 80%;
+        
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+          
+    }
+    
+    .conteneur_flex_recherche{
+    
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        text-align: center;
+    
+        width: 80%;
+        border: 1px solid;
+        padding: 3%;
+    
+        background-color: rgb(255, 255, 255, 0);
+    
+    }
+
+    .btnRecherche{
+    
+       margin-top: 15px;
+    
+        width: 50%;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+    }
+    
+    .btnSoumettre{
+    
+        width: 110px;
+        height: 30px;
+        margin-top: 20%;
+        border: none;
+        border-radius: 15px;
+    }
+    
+    .btnReinitialise{
+    
+        margin-top: 10px;
+        border-radius: 15px;
+        
+    
+    }
+}
+
+/* Tablette (Écrans moyens) */
+@media only screen and (min-width: 771px) and (max-width: 991px) {
+    /* Styles spécifiques aux écrans moyens (tablettes) */
+
+    body {
+        
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed;
+
+        overflow-x: hidden; /* Empêche le défilement horizontal si la fenêtre est redimensionnée en dessous de la taille spécifiée */
+        min-width: 565px;
+}
+
+.conteneur_flex_creation_liste{
+    
+    width: 80%;
+    align-items: center;
+    text-align: center;       
+    gap: 8%;
+
+}
+
+.conteneur_flex_creation_gauche_droite_soumission{
+      
+        display: flex;
+        flex-direction: row;         
+        gap: 8%;        
+        background-color: rgb(153, 153, 17,0);
+        width: 100%;
+}
+
+.conteneur_creation_option_droite{
+        
+    background-color: rgb(255, 255, 255, 0);
+   
+}
+
+.conteneur_creation_soumission{
+    /*margin-right: 12px;*/
+    background-color: (255, 255, 255, 0);
+}
+
+.conteneur_creation_entree_gauche{
+   
+    background-color: (255, 255, 255, 0);
+   
+}
+
+.btnSoumettre{
+    
+    width: 110px;
+    height: 30px;
+    margin-top: 20%;
+    border: none;
+    border-radius: 15px;
+}
+    
+    
+}
+
+/* Desktop (Grands écrans) */
+@media only screen and (min-width: 992px) {
+    /* Styles spécifiques aux grands écrans (ordinateurs de bureau, ordinateurs portables) */
+
+    body {
+        
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed;
+
+        overflow-x: hidden; /* Empêche le défilement horizontal si la fenêtre est redimensionnée en dessous de la taille spécifiée */
+        min-width: 565px;
+}
+
+.conteneur_flex_creation_liste{
+    
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;       
+    gap: 8%;
+
+}
+
+.conteneur_flex_creation_gauche_droite_soumission{
+      
+        display: flex;
+        flex-direction: row;      
+        align-items: center;  
+        text-align: center; 
+        gap: 10%;        
+        background-color: rgb(84, 35, 175, 0);
+        width: 50%;
+        justify-content: space-between;
+}
+
+.conteneur_creation_option_droite{
+        
+    background-color: rgb(255, 255, 255, 0);
+   
+}
+
+.conteneur_creation_soumission{
+    /*margin-right: 12px;*/
+    background-color: (255, 255, 255, 0);
+}
+
+.conteneur_creation_entree_gauche{
+   
+    background-color: (255, 255, 255, 0);
+   
+}
+
+.btnSoumettre{
+    
+    width: 110px;
+    height: 30px;    
+    margin-top: 20%;
+    border: none;
+    border-radius: 15px;
+}
+
 }
 
 
