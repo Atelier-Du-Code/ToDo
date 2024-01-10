@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
     btnValide.addEventListener('click', function (event) {
         event.preventDefault();
         ajouteUnElementDansLaListe(input_text.value, listeDeroulante.value);
+
+        input_text.value = "";
+
     });
 });
 
@@ -121,6 +124,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
+});
+
+//réinitialiser le filtrage de la liste
+document.addEventListener('DOMContentLoaded', function () {
+    btnRefresh.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        while (listeAPuces.firstChild) {
+            listeAPuces.removeChild(listeAPuces.firstChild);
+        }
+
+        for(var i = 0; i<tabNotes.length;i++)
+        {
+            var newLi = document.createElement("li");
+            newLi.textContent = tabNotes[i].texte;
+            newLi.classList.add(tabNotes[i].type);
+    
+            listeAPuces.appendChild(newLi);
+        }
+    
+
+    });
 });
 //Redimensionnement de la fenêtre
 
