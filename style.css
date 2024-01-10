@@ -303,6 +303,7 @@
 
         overflow-x: hidden; /* Empêche le défilement horizontal si la fenêtre est redimensionnée en dessous de la taille spécifiée */
         min-width: 565px;
+    }
 }
 
 .conteneur_flex_creation_liste{
@@ -353,22 +354,17 @@
     border-radius: 15px;
 }
 
-}
-
-
-
-
 .note{
    
     /*border: 2px solid blue;*/
-    background-color: rgb(145, 219, 253);
+    background-color: rgb(183, 225, 245);
 }
 
 .email{    
     
      /*border: 2px solid green;*/
 
-    background-color: rgb(132, 218, 199);
+    background-color: rgba(255, 237, 187, 0.836);
 }
 
 .todo{

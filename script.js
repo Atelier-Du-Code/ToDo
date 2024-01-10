@@ -15,7 +15,7 @@ let typeSelectionne = listeDeroulante.value;
 
 
 let tabNotes = [
-    {texte:"C'est la première note", type: "note"},
+    //{texte:"C'est la première note", type: "note"},
 ];
 
 let tabNotesFiltre = [
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function ajouteUnElementDansLaListe(texte, type) {
  
     //Ajout de l'élément dans le tableau
-    tabNotes.push({texte: "- " + texte, type: type});
+    tabNotes.push({texte: texte, type: type});
 
     //Vider la liste
     while (listeAPuces.firstChild) {
@@ -75,8 +75,18 @@ document.addEventListener('DOMContentLoaded', function () {
             var elementClique = event.target;
 
             // Faites quelque chose avec l'élément cliqué, par exemple, affichez son texte
-            console.log("Élément cliqué : " + elementClique.textContent);
-            elementClique.remove();
+
+            for(var i=0; i<tabNotes.length;i++)
+            {
+                if(tabNotes[i].texte === event.target.textContent)
+                {
+                    console.log("Élément cliqué : " + event.target.textContent);
+                    elementClique.remove();
+                    tabNotes.splice(i, 1);
+                    break;
+                }
+            }
+           
         }
     });
 });
